@@ -12,6 +12,6 @@ ENTER
 DELAY 300
 
 REM cd into twinduck labled "W" and run the 'p.ps1' file
-STRING $u=gwmi Win32_Volume|?{$_.Label -eq'W'}|select name;cd $u.name;./p.ps1;exit
+STRING $u=gwmi Win32_Volume|?{$_.Label -eq'W'}|select SD;cd $u.name;./p.ps1;exit
 ENTER
 
